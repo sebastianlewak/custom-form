@@ -2,9 +2,9 @@
 
 This project demonstrates my skills in manual testing, frontend development with Next.js, styling with Tailwind CSS, and basic MySQL database management. The core of this project is a user registration form that allows users to input their details, which are then stored in a MySQL database.
 
-<div style="text-align: center;">
+<p align="center">
 <img src="https://raw.githubusercontent.com/sebastianlewak/custom-form/main/Register%20Form/registration_form.png" alt="Opis obrazka" style="width:200px; transition: transform 0.2s ease-in-out;" onmouseover="this.style.transform='scale(1.5)';" onmouseout="this.style.transform='scale(1)';">
-</div>
+</p>
 
 
 ## Technologies Used
