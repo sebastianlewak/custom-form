@@ -13,6 +13,7 @@ This project demonstrates my skills in manual testing, frontend development with
 - **MySQL**: A relational database management system to store form data.
 - **DBeaver**: A database management tool used for viewing and managing data in the MySQL database.
 - **Git**: Version control system to manage the source code.
+- **TestRail**: Used for managing and organizing test cases.
 
 ## Setup Instructions
 
