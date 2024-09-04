@@ -30,6 +30,6 @@ To run this project on your local machine, follow these steps:
 
 4. **Run the Application**
 
-   - npm run dev
+  - npm run dev
 
 The application should now be running on http://localhost:3000.
