@@ -26,7 +26,12 @@ To run this project on your local machine, follow these steps:
 3.  **Set Up MySQL Database**
    
   - Create a MySQL database.
-  - Update the db_connection.js file in the /src/database directory with your MySQL credentials.
+  - Update the .env file in the root directory with your MySQL credentials. The following fields need to be filled:
+
+    DB_HOST=localhost
+    DB_USER=root
+    DB_PASSWORD=yourpassword
+    DB_NAME=yourname
 
 4. **Run the Application**
 
