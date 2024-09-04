@@ -15,6 +15,30 @@ This project demonstrates my skills in manual testing, frontend development with
 - **Git**: Version control system to manage the source code.
 - **TestRail**: Used for managing and organizing test cases.
 
+### Next.js
+![Next.js](https://img.shields.io/badge/Next.js-%23000000?style=flat&logo=nextdotjs&logoColor=white)
+A React framework for server-side rendering and static site generation.
+
+### Tailwind CSS
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%23000000?style=flat&logo=tailwindcss&logoColor=white)
+A utility-first CSS framework for styling the form.
+
+### MySQL
+![MySQL](https://img.shields.io/badge/MySQL-%2300f?style=flat&logo=mysql&logoColor=white)
+A relational database management system to store form data.
+
+### DBeaver
+![DBeaver](https://img.shields.io/badge/DBeaver-%23000000?style=flat&logo=dbeaver&logoColor=white)
+A database management tool used for viewing and managing data in the MySQL database.
+
+### Git
+![Git](https://img.shields.io/badge/Git-%23F05032?style=flat&logo=git&logoColor=white)
+Version control system to manage the source code.
+
+### TestRail
+![TestRail](https://img.shields.io/badge/TestRail-%23000000?style=flat&logo=testrail&logoColor=white)
+Used for managing and organizing test cases.
+
 ## Setup Instructions
 
 To run this project on your local machine, follow these steps:
