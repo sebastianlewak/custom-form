@@ -40,7 +40,7 @@ To run this project on your local machine, follow these steps:
     DB_HOST=localhost  
     DB_USER=root  
     DB_PASSWORD=yourpassword  
-    DB_NAME=yourname```
+    DB_NAME=yourname
 
 4. **Run the Application**
 
