@@ -47,6 +47,6 @@ The application should now be running on http://localhost:3000.
 
 ## Test Cases Management with TestRail
 
-To manage and execute test cases for this project, I used [TestRail]
+To manage and execute test cases for this project, I used TestRail
 
 <a href="" target="_blank">View Test Cases</a>
