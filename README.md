@@ -2,7 +2,7 @@
 
 This project demonstrates my skills in manual testing, frontend development with Next.js, styling with Tailwind CSS, and basic MySQL database management. The core of this project is a user registration form that allows users to input their details, which are then stored in a MySQL database.
 
-![screenshot](registration_form.png)
+![screenshot](Register Form/registration_form.png)
 
 
 ## Technologies Used
