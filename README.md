@@ -93,10 +93,3 @@ The following SQL queries were executed in DBeaver to validate and manage the da
      ```
    - **Purpose**: To verify that the passwords stored in the database are encrypted, ensuring user data security.
 
-### **Database Management with DBeaver**
-
-- **Database Connection**: Connected to the MySQL database using DBeaver, configured with the credentials provided in the `.env` file.
-- **Query Execution**: Executed SQL queries directly in DBeaver to validate data, check for issues, and ensure the correctness of database operations.
-- **Data Export**: Exported query results for analysis and reporting, which helped in documenting the test results and sharing insights with the development team.
-
-By using DBeaver, I was able to efficiently manage the database, execute complex queries, and maintain data integrity throughout the testing process.
