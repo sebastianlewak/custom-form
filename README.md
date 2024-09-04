@@ -8,7 +8,7 @@ This project demonstrates my skills in manual testing, frontend development with
 
 
 ## Technologies Used
-- **Next.js**: A React framework for server-side rendering and static site generation.
+- ![Next.js](https://img.shields.io/badge/Next.js-%23000000?style=flat&logo=nextdotjs&logoColor=white): A React framework for server-side rendering and static site generation.
 - **Tailwind CSS**: A utility-first CSS framework for styling the form.
 - **MySQL**: A relational database management system to store form data.
 - **DBeaver**: A database management tool used for viewing and managing data in the MySQL database.
