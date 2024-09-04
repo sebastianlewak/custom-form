@@ -27,9 +27,11 @@ To run this project on your local machine, follow these steps:
 
 3. **Install Dependencies**
 
-   ```npm install```
+   ```console
+   npm install
+   ```
 
-4.  **Set Up MySQL Database**
+5.  **Set Up MySQL Database**
    
   - Create a MySQL database.
   - Update the .env file in the root directory with your MySQL credentials. The following fields need to be filled:
@@ -41,7 +43,9 @@ To run this project on your local machine, follow these steps:
 
 4. **Run the Application**
 
-   ```npm run dev```
+   ```console
+   npm run dev
+   ```
 
 The application should now be running on http://localhost:3000.
 
