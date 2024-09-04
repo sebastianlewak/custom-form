@@ -36,10 +36,11 @@ To run this project on your local machine, follow these steps:
   - Create a MySQL database.
   - Update the .env file in the root directory with your MySQL credentials. The following fields need to be filled:
 
+    ```properties
     DB_HOST=localhost  
     DB_USER=root  
     DB_PASSWORD=yourpassword  
-    DB_NAME=yourname  
+    DB_NAME=yourname ```
 
 4. **Run the Application**
 
