@@ -12,27 +12,27 @@ This project demonstrates my skills in manual testing, frontend development with
 <table>
   <tr>
     <td><img src="https://img.shields.io/badge/Next.js-%23000000?style=flat&logo=nextdotjs&logoColor=white" alt="Next.js" /></td>
-    <td>Next.js: A React framework for server-side rendering and static site generation.</td>
+    <td> A React framework for server-side rendering and static site generation.</td>
   </tr>
   <tr>
     <td><img src="https://img.shields.io/badge/Tailwind_CSS-%23000000?style=flat&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /></td>
-    <td>Tailwind CSS: A utility-first CSS framework for styling the form.</td>
+    <td> A utility-first CSS framework for styling the form.</td>
   </tr>
   <tr>
     <td><img src="https://img.shields.io/badge/MySQL-%2300f?style=flat&logo=mysql&logoColor=white" alt="MySQL" /></td>
-    <td>MySQL: A relational database management system to store form data.</td>
+    <td> A relational database management system to store form data.</td>
   </tr>
   <tr>
     <td><img src="https://img.shields.io/badge/DBeaver-%23000000?style=flat&logo=dbeaver&logoColor=white" alt="DBeaver" /></td>
-    <td>DBeaver: A database management tool used for viewing and managing data in the MySQL database.</td>
+    <td> A database management tool used for viewing and managing data in the MySQL database.</td>
   </tr>
   <tr>
     <td><img src="https://img.shields.io/badge/Git-%23F05032?style=flat&logo=git&logoColor=white" alt="Git" /></td>
-    <td>Git: Version control system to manage the source code.</td>
+    <td> Version control system to manage the source code.</td>
   </tr>
   <tr>
     <td><img src="https://img.shields.io/badge/TestRail-%23000000?style=flat&logo=testrail&logoColor=white" alt="TestRail" /></td>
-    <td>TestRail: Used for managing and organizing test cases.</td>
+    <td> Used for managing and organizing test cases.</td>
   </tr>
 </table>
 
