@@ -20,14 +20,16 @@ To run this project on your local machine, follow these steps:
 
 1. **Clone the Repository**
    
-   ```git clone [https://github.com/yourusername/Manual-Testing-Portfolio.git](https://github.com/sebastianlewak/custom-form.git)```
+   ```shell
+   git clone [https://github.com/yourusername/Manual-Testing-Portfolio.git](https://github.com/sebastianlewak/custom-form.git)
+   ```
 
 
-2. **Install Dependencies**
+3. **Install Dependencies**
 
    ```npm install```
 
-3.  **Set Up MySQL Database**
+4.  **Set Up MySQL Database**
    
   - Create a MySQL database.
   - Update the .env file in the root directory with your MySQL credentials. The following fields need to be filled:
