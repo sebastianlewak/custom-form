@@ -50,3 +50,53 @@ The application should now be running on http://localhost:3000.
 To manage and execute test cases for this project, I used TestRail
 
 <a href="" target="_blank">View Test Cases</a>
+
+
+## SQL Queries Execution with DBeaver
+
+I used [DBeaver](https://dbeaver.io/) as a database management tool to interact with the MySQL database. DBeaver provides a powerful interface for writing and executing SQL queries, managing data, and analyzing query results.
+
+### **SQL Queries in DBeaver**
+
+The following SQL queries were executed in DBeaver to validate and manage the data associated with the registration form:
+
+1. **Retrieve All Users**
+   - **Query**:
+     ```sql
+     SELECT * FROM users;
+     ```
+   - **Purpose**: To verify that user data is correctly inserted into the `users` table after form submission.
+
+2. **Check for Duplicate Emails**
+   - **Query**:
+     ```sql
+     SELECT email, COUNT(*) 
+     FROM users 
+     GROUP BY email 
+     HAVING COUNT(*) > 1;
+     ```
+   - **Purpose**: To ensure that no duplicate email addresses exist in the database, thereby enforcing unique user registration.
+
+3. **Delete Test Data**
+   - **Query**:
+     ```sql
+     DELETE FROM users WHERE email = 'test@example.com';
+     ```
+   - **Purpose**: To remove any test data generated during the testing process, maintaining the integrity of the production database.
+
+4. **Password Encryption Verification**
+   - **Query**:
+     ```sql
+     SELECT id, email, password 
+     FROM users 
+     WHERE email = 'test@example.com';
+     ```
+   - **Purpose**: To verify that the passwords stored in the database are encrypted, ensuring user data security.
+
+### **Database Management with DBeaver**
+
+- **Database Connection**: Connected to the MySQL database using DBeaver, configured with the credentials provided in the `.env` file.
+- **Query Execution**: Executed SQL queries directly in DBeaver to validate data, check for issues, and ensure the correctness of database operations.
+- **Data Export**: Exported query results for analysis and reporting, which helped in documenting the test results and sharing insights with the development team.
+
+By using DBeaver, I was able to efficiently manage the database, execute complex queries, and maintain data integrity throughout the testing process.
