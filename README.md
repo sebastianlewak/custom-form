@@ -16,7 +16,7 @@ To run this project on your local machine, follow these steps:
 
 1. **Clone the Repository**
    
-  - git clone https://github.com/yourusername/Manual-Testing-Portfolio.git
+  - git clone [https://github.com/yourusername/Manual-Testing-Portfolio.git](https://github.com/sebastianlewak/custom-form.git)
 
 
 2. **Install Dependencies**
