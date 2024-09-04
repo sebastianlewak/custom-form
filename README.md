@@ -21,7 +21,7 @@ To run this project on your local machine, follow these steps:
 1. **Clone the Repository**
    
    ```shell
-   git clone (https://github.com/sebastianlewak/custom-form.git)
+   [git clone (https://github.com/sebastianlewak/custom-form.git)](https://github.com/sebastianlewak/custom-form.git)
    ```
 
 
