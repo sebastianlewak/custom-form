@@ -20,12 +20,12 @@ To run this project on your local machine, follow these steps:
 
 1. **Clone the Repository**
    
-  - git clone [https://github.com/yourusername/Manual-Testing-Portfolio.git](https://github.com/sebastianlewak/custom-form.git)
+   ``git clone [https://github.com/yourusername/Manual-Testing-Portfolio.git](https://github.com/sebastianlewak/custom-form.git)``
 
 
 2. **Install Dependencies**
 
-  - npm install
+   ``npm install``
 
 3.  **Set Up MySQL Database**
    
@@ -39,7 +39,7 @@ To run this project on your local machine, follow these steps:
 
 4. **Run the Application**
 
-  - npm run dev
+   ``npm run dev``
 
 The application should now be running on http://localhost:3000.
 
