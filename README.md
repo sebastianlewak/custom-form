@@ -80,7 +80,7 @@ The application should now be running on http://localhost:3000.
 
 To manage and execute test cases for this project, I used TestRail
 
-<a href="" target="_blank">View Test Cases</a>
+<a href="https://drive.google.com/drive/folders/1zFlq7q0OHNtmhCOxRy4jpNzl70p3LkVX?hl=pl" target="_blank">View Test Cases</a>
 
 
 ## SQL Queries Execution with DBeaver
