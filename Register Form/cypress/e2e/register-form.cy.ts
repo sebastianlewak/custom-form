@@ -31,20 +31,19 @@ describe("Filling out the registration form", () => {
     // cy.get("input[name=email]").should("have.attr", "type", "email");
   });
 
-  it.only("Filling out the register form with correct data", () => {
+  it("Filling out the register form with correct data", () => {
     cy.getData("email-input").type("testowy@gmail.com");
     cy.getData("password-input").type("Test1234!");
     cy.getData("confirm-password-input").type("Test1234!");
     cy.getData("first-name-input").type("Test");
     cy.getData("last-name-input").type("Test");
     // cy.get("#gender").select("Male");
-    cy.getData("gender-select").find("select").select("Male")
+    cy.getData("gender-select").find("select").select("Male");
     //find 3 select
     // cy.getData("gender-select").find("select").eq(3).select("Male");
     cy.getData("next-button").click();
 
-    //url testing 
+    //url testing
     //cy.location("pathname").should("equal", "/testing-foundations")
-
   });
 });
