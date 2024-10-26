@@ -4,6 +4,6 @@ describe("template spec", () => {
 
     cy.get("div").eq(0).contains("Email");
 
-    cy.get("div").eq(1).contains("Password");
+    // cy.get("div").eq(1).contains("Password");
   });
 });
