@@ -19,9 +19,7 @@ export default function Example() {
 
   const validateEmail = (email: string) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase())
-      ? ""
-      : "Not a valid email address.";
+    return re.test(String(email).toLowerCase()) ? "" : "Not a valid email address.";
   };
 
   const validatePassword = (password: string) => {
@@ -49,9 +47,7 @@ export default function Example() {
     setErrors((prevErrors) => ({ ...prevErrors, password: error }));
   };
 
-  const handleConfirmPasswordChange = (
-    e: React.ChangeEvent<HTMLInputElement>
-  ) => {
+  const handleConfirmPasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.currentTarget.value;
     setConfirmPassword(value);
     if (value !== password) {
@@ -118,23 +114,15 @@ export default function Example() {
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <img
-            alt="Your Company"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            className="mx-auto h-10 w-auto"
-          />
-          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+          <h1 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
             Create an Account
-          </h2>
+          </h1>
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
+            <div data-test="email-input">
+              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                 Email
               </label>
               <div className="relative mt-2 rounded-md shadow-sm">
@@ -157,10 +145,7 @@ export default function Example() {
                 />
                 {errors.email && (
                   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
-                    <ExclamationCircleIcon
-                      aria-hidden="true"
-                      className="h-5 w-5 text-red-500"
-                    />
+                    <ExclamationCircleIcon aria-hidden="true" className="h-5 w-5 text-red-500" />
                   </div>
                 )}
               </div>
@@ -171,11 +156,8 @@ export default function Example() {
               )}
             </div>
 
-            <div>
-              <label
-                htmlFor="password"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
+            <div data-test="password-input">
+              <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
                 Password
               </label>
               <div className="relative mt-2">
@@ -188,9 +170,7 @@ export default function Example() {
                   value={password}
                   onChange={handlePasswordChange}
                   aria-invalid={errors.password ? "true" : "false"}
-                  aria-describedby={
-                    errors.password ? "password-error" : undefined
-                  }
+                  aria-describedby={errors.password ? "password-error" : undefined}
                   className={`block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ${
                     errors.password
                       ? "ring-red-300 placeholder:text-red-300 focus:ring-red-500"
@@ -199,10 +179,7 @@ export default function Example() {
                 />
                 {errors.password && (
                   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
-                    <ExclamationCircleIcon
-                      aria-hidden="true"
-                      className="h-5 w-5 text-red-500"
-                    />
+                    <ExclamationCircleIcon aria-hidden="true" className="h-5 w-5 text-red-500" />
                   </div>
                 )}
               </div>
@@ -213,11 +190,8 @@ export default function Example() {
               )}
             </div>
 
-            <div>
-              <label
-                htmlFor="confirm-password"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
+            <div data-test="confirm-password-input">
+              <label htmlFor="confirm-password" className="block text-sm font-medium leading-6 text-gray-900">
                 Confirm Password
               </label>
               <div className="relative mt-2">
@@ -230,11 +204,7 @@ export default function Example() {
                   value={confirmPassword}
                   onChange={handleConfirmPasswordChange}
                   aria-invalid={errors.confirmPassword ? "true" : "false"}
-                  aria-describedby={
-                    errors.confirmPassword
-                      ? "confirm-password-error"
-                      : undefined
-                  }
+                  aria-describedby={errors.confirmPassword ? "confirm-password-error" : undefined}
                   className={`block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ${
                     errors.confirmPassword
                       ? "ring-red-300 placeholder:text-red-300 focus:ring-red-500"
@@ -243,28 +213,19 @@ export default function Example() {
                 />
                 {errors.confirmPassword && (
                   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
-                    <ExclamationCircleIcon
-                      aria-hidden="true"
-                      className="h-5 w-5 text-red-500"
-                    />
+                    <ExclamationCircleIcon aria-hidden="true" className="h-5 w-5 text-red-500" />
                   </div>
                 )}
               </div>
               {errors.confirmPassword && (
-                <p
-                  id="confirm-password-error"
-                  className="mt-2 text-sm text-red-600"
-                >
+                <p id="confirm-password-error" className="mt-2 text-sm text-red-600">
                   {errors.confirmPassword}
                 </p>
               )}
             </div>
 
-            <div>
-              <label
-                htmlFor="firstName"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
+            <div data-test="first-name-input">
+              <label htmlFor="firstName" className="block text-sm font-medium leading-6 text-gray-900">
                 First Name
               </label>
               <div className="mt-2">
@@ -282,11 +243,8 @@ export default function Example() {
               </div>
             </div>
 
-            <div>
-              <label
-                htmlFor="lastName"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
+            <div data-test="last-name-input">
+              <label htmlFor="lastName" className="block text-sm font-medium leading-6 text-gray-900">
                 Last Name
               </label>
               <div className="mt-2">
@@ -304,11 +262,8 @@ export default function Example() {
               </div>
             </div>
 
-            <div>
-              <label
-                htmlFor="gender"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
+            <div data-test="gender-select">
+              <label htmlFor="gender" className="block text-sm font-medium leading-6 text-gray-900">
                 Gender
               </label>
               <select
@@ -326,7 +281,7 @@ export default function Example() {
               </select>
             </div>
 
-            <div>
+            <div data-test="next-button">
               <button
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
