@@ -3,9 +3,8 @@
 This project demonstrates my skills in manual testing, frontend development with Next.js, styling with Tailwind CSS, and basic MySQL database management. The core of this project is a user registration form that allows users to input their details, which are then stored in a MySQL database.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/sebastianlewak/custom-form/main/Register%20Form/registration_form.png" alt="Opis obrazka" style="width:300px;">
+<img src="https://github.com/sebastianlewak/custom-form/blob/main/registration_form.png" style="width:300px;">
 </p>
-
 
 ## Technologies Used
 
@@ -36,35 +35,33 @@ This project demonstrates my skills in manual testing, frontend development with
   </tr>
 </table>
 
-
-
 ## Setup Instructions
 
 To run this project on your local machine, follow these steps:
 
 1. **Clone the Repository**
-   
+
    ```console
    git clone https://github.com/sebastianlewak/custom-form.git
    ```
 
-
-3. **Install Dependencies**
+2. **Install Dependencies**
 
    ```console
    npm install
    ```
 
-5.  **Set Up MySQL Database**
-   
-  - Create a MySQL database.
-  - Update the .env file in the root directory with your MySQL credentials. The following fields need to be filled:
+3. **Set Up MySQL Database**
 
-    ```properties
-    DB_HOST=localhost  
-    DB_USER=root  
-    DB_PASSWORD=yourpassword  
-    DB_NAME=yourname
+- Create a MySQL database.
+- Update the .env file in the root directory with your MySQL credentials. The following fields need to be filled:
+
+  ```properties
+  DB_HOST=localhost
+  DB_USER=root
+  DB_PASSWORD=yourpassword
+  DB_NAME=yourname
+  ```
 
 4. **Run the Application**
 
@@ -74,14 +71,11 @@ To run this project on your local machine, follow these steps:
 
 The application should now be running on http://localhost:3000.
 
-
-
 ## Test Cases Management with TestRail
 
 To manage and execute test cases for this project, I used TestRail
 
 <a href="https://drive.google.com/drive/folders/1zFlq7q0OHNtmhCOxRy4jpNzl70p3LkVX?hl=pl" target="_blank">View Test Cases</a>
-
 
 ## SQL Queries Execution with DBeaver
 
@@ -92,6 +86,7 @@ I used [DBeaver](https://dbeaver.io/) as a database management tool to interact 
 The following SQL queries were executed in DBeaver to validate and manage the data associated with the registration form:
 
 1. **Retrieve All Users**
+
    - **Query**:
      ```sql
      SELECT * FROM users;
@@ -99,16 +94,18 @@ The following SQL queries were executed in DBeaver to validate and manage the da
    - **Purpose**: To verify that user data is correctly inserted into the `users` table after form submission.
 
 2. **Check for Duplicate Emails**
+
    - **Query**:
      ```sql
-     SELECT email, COUNT(*) 
-     FROM users 
-     GROUP BY email 
+     SELECT email, COUNT(*)
+     FROM users
+     GROUP BY email
      HAVING COUNT(*) > 1;
      ```
    - **Purpose**: To ensure that no duplicate email addresses exist in the database, thereby enforcing unique user registration.
 
 3. **Delete Test Data**
+
    - **Query**:
      ```sql
      DELETE FROM users WHERE email = 'test@example.com';
@@ -118,9 +115,8 @@ The following SQL queries were executed in DBeaver to validate and manage the da
 4. **Password Encryption Verification**
    - **Query**:
      ```sql
-     SELECT id, email, password 
-     FROM users 
+     SELECT id, email, password
+     FROM users
      WHERE email = 'test@example.com';
      ```
    - **Purpose**: To verify that the passwords stored in the database are encrypted, ensuring user data security.
-
