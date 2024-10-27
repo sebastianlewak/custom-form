@@ -129,6 +129,7 @@ export default function Example() {
                 <input
                   id="email"
                   name="email"
+                  type="email"
                   required
                   autoComplete="email"
                   placeholder="you@example.com"
