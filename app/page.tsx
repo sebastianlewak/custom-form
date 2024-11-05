@@ -1,6 +1,9 @@
 "use client";
 import { useState } from "react";
 import { ExclamationCircleIcon } from "@heroicons/react/20/solid";
+import bcrypt from "bcryptjs";
+
+const salt = bcrypt.genSaltSync(10);
 
 export default function Example() {
   const [email, setEmail] = useState("");
@@ -68,15 +71,17 @@ export default function Example() {
       return;
     }
 
-    const formData = {
-      email,
-      password,
-      firstName,
-      lastName,
-      gender,
-    };
-
     try {
+      const hashedPassword = await bcrypt.hash(password, salt);
+
+      const formData = {
+        email,
+        password: hashedPassword,
+        firstName,
+        lastName,
+        gender,
+      };
+
       console.log("Sending request to /api/register");
       const response = await fetch("/api/register", {
         method: "POST",
@@ -91,6 +96,7 @@ export default function Example() {
       if (response.ok) {
         console.log("Form submitted successfully:", data.message);
 
+        // Clear form fields
         setEmail("");
         setPassword("");
         setConfirmPassword("");
